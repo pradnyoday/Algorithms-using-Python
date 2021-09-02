@@ -7,9 +7,11 @@ def max_occurance(string):
     for i in string:
         if(i in hash): hash[i] += 1
         else: hash[i] = 1
+        if(hash[i] == occurance):
+            char = chr(min(ord(i), ord(char)))
         if(hash[i] > occurance):
             occurance = hash[i]
             char = i
     return (char, occurance)
-string = "Pulkit is a dog!!!!!!!!!!!!"
+string = "aaaaAAAA"
 print(max_occurance(string))
