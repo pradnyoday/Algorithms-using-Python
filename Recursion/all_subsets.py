@@ -1,5 +1,5 @@
 def print_subsets(i, ans, arr, n):
-    if(i == n): 
+    if(i == n):
         print(ans)
         return
     ans.append(arr[i]) # Pick item
